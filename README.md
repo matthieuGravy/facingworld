@@ -33,6 +33,6 @@ This process ensures that you have Node.js and npm installed, and it also sets u
 
 <br />
 
-> Created by _Matthieu Gravy_
+> _Matthieu Gravy_
 > > <a href="https://www.linkedin.com/in/matthieugravy/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin" title="linkedin"/></a>
 
