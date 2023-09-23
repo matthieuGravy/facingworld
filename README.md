@@ -1,6 +1,27 @@
 # Node server beginner 
 ## open source
-### how install nodeJS and npm
+
+<details>
+<summary> Usage Recommendations 
+</summary>
+  
+### Project Setup
+
+```sh
+npm install
+```
+
+<h4>Compile and Hot-Reload for Development</h4> 
+
+```sh
+npm run start
+```
+</details>
+<details>
+<summary> install node on Ubuntu 
+</summary>
+
+### Follow this order
 
 ```sh
 sudo apt update
