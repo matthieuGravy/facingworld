@@ -19,9 +19,10 @@ source ~/.bashrc
 ```
 ```sh
 nvm ls-remote
-    ```
+```
+
+### (Choose the latest LTS version) nvm use v18.17.1
 ```sh
-    (Choose the latest LTS version) nvm use v18.17.1
 node -v
 ```
 
