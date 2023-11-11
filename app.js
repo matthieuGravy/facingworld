@@ -1,4 +1,5 @@
 const express = require("express");
+const path = require("path");
 const errorHandler = require("errorhandler");
 
 //import le message h2
@@ -10,7 +11,7 @@ console.log(port);
 
 // Configuration du moteur de modèle Pug
 app.set("view engine", "pug");
-app.set("views", __dirname + "/views"); // Créer un dossier 'views' pour les fichiers Pug
+app.set("views", path.join(__dirname, "views")); // Créer un dossier 'views' pour les fichiers Pug
 
 // Middleware pour gérer les erreurs en développement
 if (process.env.NODE_ENV === "development") {
@@ -34,6 +35,13 @@ app.get("/", (req, res) => {
   res.render("index", {
     contentBienvenue: bienvenueModule.messageBienvenue,
   });
+});
+
+// Autres routes ici
+
+// Route pour récupèrer data côté client
+app.get("/api/data", (req, res) => {
+  res.json({ message: "Données du serveur pour le client" });
 });
 
 // Démarrer le serveur
