@@ -1,13 +1,16 @@
 const express = require("express");
 const errorHandler = require("errorhandler");
 
+//import le message h2
+const bienvenueModule = require("./bienvenueModule");
+
 const app = express();
 const port = process.env.PORT || 3064;
 console.log(port);
 
 // Configuration du moteur de modèle Pug
 app.set("view engine", "pug");
-app.set("views", __dirname + "/views"); // Créez un dossier 'views' pour vos fichiers Pug
+app.set("views", __dirname + "/views"); // Créer un dossier 'views' pour les fichiers Pug
 
 // Middleware pour gérer les erreurs en développement
 if (process.env.NODE_ENV === "development") {
@@ -28,7 +31,9 @@ app.use(express.static("public"));
 
 // Route pour la page d'accueil rendue avec Pug
 app.get("/", (req, res) => {
-  res.render("index");
+  res.render("index", {
+    contentBienvenue: bienvenueModule.messageBienvenue,
+  });
 });
 
 // Démarrer le serveur
