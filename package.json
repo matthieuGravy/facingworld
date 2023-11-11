@@ -4,7 +4,7 @@
   "description": "serveur test",
   "main": "app.js",
   "scripts": {
-    "start": "concurrently \"NODE_ENV=development nodemon app.js\" \"cd client && npm run dev\"",
+    "start": "NODE_ENV=development nodemon app.js",
     "start:prod": "NODE_ENV=production nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
