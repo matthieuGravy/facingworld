@@ -1,5 +1,6 @@
 const express = require("express");
 const path = require("path");
+const bodyParser = require("body-parser");
 const errorHandler = require("errorhandler");
 
 //import le message h2
@@ -8,6 +9,10 @@ const bienvenueModule = require("./bienvenueModule");
 const app = express();
 const port = process.env.PORT || 3064;
 console.log(port);
+
+// Configurer body-parser pour analyser les données JSON
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // Configuration du moteur de modèle Pug
 app.set("view engine", "pug");
@@ -31,17 +36,19 @@ if (process.env.NODE_ENV === "development") {
 app.use(express.static("public"));
 
 // Route pour la page d'accueil rendue avec Pug
+
 app.get("/", (req, res) => {
-  res.render("index", {
-    contentBienvenue: bienvenueModule.messageBienvenue,
-  });
+  res.render("formulaire");
 });
 
 // Autres routes ici
+app.post("/check-form", (req, res) => {
+  const nom = req.body.nom;
+  const prenom = req.body.prenom;
 
-// Route pour récupèrer data côté client
-app.get("/api/data", (req, res) => {
-  res.json({ message: "Données du serveur pour le client" });
+  const resultat = { nom, prenom };
+
+  res.render("resultat", { resultat });
 });
 
 // Démarrer le serveur
