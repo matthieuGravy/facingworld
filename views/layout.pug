@@ -5,17 +5,16 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(href="../assets/styles.css", rel="stylesheet")
     title Facing World
-  body
+  body.bg-rose-200
+    nav
+          ul.flex.flex-row.justify-end 
+            li.flex-none.w-16
+              a(href="/") Acceuil
+            li.flex-none.w-16 
+              a(href="/contact") Contact
+        
     header 
-    h1 facing worlds
-
-    nav 
-    ul 
-      li 
-        a(href="/") Acceuil
-      li 
-        a(href="/contact") Contact
-    
-
+      h1.text-6xl.text-center.text-pink-500.font-bold.mt-8 Facing World
+      
     block content
 

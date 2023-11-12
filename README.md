@@ -2,7 +2,7 @@
 
 ## open source
 
-<img height="30px" src="https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="nodeJS" title="nodeJS"/> <img height="30px" src="https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white" alt="express" title="express"/> <img height="30px" src="https://img.shields.io/badge/Pug-E3C29B?style=for-the-badge&logo=pug&logoColor=black" alt="pug" title="pug"/> <img height="30px" src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="tailwind css" title="tailwind css"/>
+<img height="30px" src="https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white" alt="express" title="express"/> <img height="30px" src="https://img.shields.io/badge/Pug-E3C29B?style=for-the-badge&logo=pug&logoColor=black" alt="pug" title="pug"/> <img height="30px" src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="tailwind css" title="tailwind css"/>
 
 <details>
 <summary> Usage Recommendations 

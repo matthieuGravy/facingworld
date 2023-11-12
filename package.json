@@ -6,8 +6,7 @@
   "scripts": {
     "start": "NODE_ENV=development nodemon app.js",
     "start:prod": "NODE_ENV=production nodemon app.js",
-    "build": "NODE_ENV=production tailwindcss build -i styles/taiwindcss.css -o assets/styles.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "NODE_ENV=production tailwindcss build -i styles/taiwindcss.css -o assets/styles.css"
   },
   "author": "matthieuGravy",
   "license": "ISC",
