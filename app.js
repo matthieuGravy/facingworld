@@ -36,8 +36,13 @@ if (process.env.NODE_ENV === "development") {
 app.use(express.static("public"));
 
 // Route pour la page d'accueil rendue avec Pug
-
 app.get("/", (req, res) => {
+  res.render("index", {
+    contentBienvenue: bienvenueModule.messageBienvenue,
+  });
+});
+
+app.get("/contact", (req, res) => {
   res.render("formulaire");
 });
 
