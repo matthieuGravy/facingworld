@@ -1,6 +1,9 @@
-# Node server beginner 
+# Node server beginner
+
 ## open source
-<img height="20px" src="https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="nodeJS" title="nodeJS"/> <img height="20px" src="https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white" alt="express" title="express"/>
+
+<img height="30px" src="https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="nodeJS" title="nodeJS"/> <img height="30px" src="https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white" alt="express" title="express"/> <img height="30px" src="https://img.shields.io/badge/Pug-E3C29B?style=for-the-badge&logo=pug&logoColor=black" alt="pug" title="pug"/> <img height="30px" src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="tailwind css" title="tailwind css"/>
+
 <details>
 <summary> Usage Recommendations 
 </summary>
@@ -11,11 +14,12 @@
 npm install
 ```
 
-<h4>Compile and Hot-Reload for Development</h4> 
+<h4>Compile and Hot-Reload for Development</h4>
 
 ```sh
 npm run start
 ```
+
 </details>
 <details>
 <summary> install node on Ubuntu 
@@ -26,26 +30,33 @@ npm run start
 ```sh
 sudo apt update
 ```
+
 ```sh
 sudo apt upgrade
 ```
+
 ```sh
 sudo apt install nodejs npm
 ```
+
 ```sh
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 ```
+
 ```sh
 source ~/.bashrc
 ```
+
 ```sh
 nvm ls-remote
 ```
 
 ### (Choose the latest LTS version) nvm use v18.17.1
+
 ```sh
 nvm use v[your choice]
 ```
+
 ```sh
 node -v
 ```
@@ -59,5 +70,5 @@ This process ensures that you have Node.js and npm installed, and it also sets u
 <br />
 
 > _Matthieu Gravy_
+>
 > > <a href="https://www.linkedin.com/in/matthieugravy/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin" title="linkedin"/></a>
-
