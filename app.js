@@ -14,6 +14,9 @@ console.log(port);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+//configuration taiwind
+app.use("/assets", express.static("assets"));
+
 // Configuration du moteur de modèle Pug
 app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "views")); // Créer un dossier 'views' pour les fichiers Pug
